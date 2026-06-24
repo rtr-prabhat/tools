@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
+import { useToolState } from '../../context/ToolStateContext';
 
 function hexToRgb(hex) {
   const h = hex.replace('#', '');
@@ -59,6 +60,15 @@ export default function ColorConverter() {
   const [rgb, setRgb] = useState({ r: 99, g: 102, b: 241 });
   const [hsl, setHsl] = useState({ h: 239, s: 84, l: 67 });
   const [copied, setCopied] = useState('');
+  const { updateState } = useToolState();
+
+  // Push color state to shared context for live preview
+  useEffect(() => {
+    updateState('colorHex', hex);
+    updateState('colorR', rgb.r);
+    updateState('colorG', rgb.g);
+    updateState('colorB', rgb.b);
+  }, [hex, rgb, updateState]);
 
   const sync = useCallback((source, value) => {
     let r, g, b;

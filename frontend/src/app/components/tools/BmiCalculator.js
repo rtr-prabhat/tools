@@ -1,5 +1,6 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useToolState } from '../../context/ToolStateContext';
 
 const CATEGORIES = [
   { max: 18.5, label: 'Underweight', color: '#3b82f6', bg: '#eff6ff', tip: 'Consider consulting a nutritionist. A balanced diet can help you reach a healthy weight.' },
@@ -20,6 +21,14 @@ export default function BmiCalculator() {
   const [heightFt, setHeightFt] = useState('');
   const [heightIn, setHeightIn] = useState('');
   const [result, setResult] = useState(null);
+  const { updateState } = useToolState();
+
+  // Push BMI result to shared context for live preview
+  useEffect(() => {
+    updateState('bmiResult', result?.bmi?.toFixed(1) || null);
+    updateState('bmiWeight', weight);
+    updateState('bmiHeight', heightCm || heightFt);
+  }, [result, weight, heightCm, heightFt, updateState]);
 
   const calculate = () => {
     let wKg, hM;

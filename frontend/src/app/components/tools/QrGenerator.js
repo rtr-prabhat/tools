@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useToolState } from '../../context/ToolStateContext';
 
 const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
@@ -11,6 +12,12 @@ export default function QrGenerator() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [generatedAt, setGeneratedAt] = useState(null);
+  const { updateState } = useToolState();
+
+  // Push QR code to shared context for preview
+  useEffect(() => {
+    updateState('qrDataUrl', qrDataUrl);
+  }, [qrDataUrl, updateState]);
 
   const generate = async () => {
     if (!text.trim()) { setError('Please enter text or URL'); return; }

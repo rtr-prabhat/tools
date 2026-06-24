@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import { useToolState } from '../../context/ToolStateContext';
 
 const CATEGORIES = {
   Length: {
@@ -41,6 +42,7 @@ export default function UnitConverter() {
   const [from, setFrom] = useState('m');
   const [to, setTo] = useState('ft');
   const [value, setValue] = useState('1');
+  const { updateState } = useToolState();
 
   const unitList = cat === 'Temperature' ? Object.keys(TEMP) : Object.keys(CATEGORIES[cat].units);
 
@@ -50,6 +52,14 @@ export default function UnitConverter() {
     const r = convert(cat, from, to, n);
     return Number.isFinite(r) ? (Math.abs(r) < 0.001 || Math.abs(r) > 1e9 ? r.toExponential(6) : parseFloat(r.toPrecision(8)).toString()) : '—';
   }, [cat, from, to, value]);
+
+  // Push conversion to shared context for live preview
+  useEffect(() => {
+    updateState('unitValue', value);
+    updateState('unitFrom', from);
+    updateState('unitTo', to);
+    updateState('unitResult', result);
+  }, [value, from, to, result, updateState]);
 
   const switchUnits = () => { const t = from; setFrom(to); setTo(t); };
 

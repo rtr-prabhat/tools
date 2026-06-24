@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import { useToolState } from '../../context/ToolStateContext';
 
 const ZODIAC = [
   { sign: 'Capricorn', emoji: '♑', start: [12, 22], end: [1, 19] },
@@ -33,6 +34,7 @@ export default function AgeCalculator() {
   const today = new Date().toISOString().split('T')[0];
   const [dob, setDob] = useState('');
   const [calcTo, setCalcTo] = useState(today);
+  const { updateState } = useToolState();
 
   const result = useMemo(() => {
     if (!dob) return null;
@@ -60,6 +62,13 @@ export default function AgeCalculator() {
 
     return { years, months, days, totalDays, hours, minutes, daysToNextBday, zodiac, bornDay };
   }, [dob, calcTo]);
+
+  // Push age result to shared context for live preview
+  useEffect(() => {
+    updateState('ageYears', result?.years ?? undefined);
+    updateState('ageMonths', result?.months ?? undefined);
+    updateState('ageDays', result?.days ?? undefined);
+  }, [result, updateState]);
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 space-y-5">

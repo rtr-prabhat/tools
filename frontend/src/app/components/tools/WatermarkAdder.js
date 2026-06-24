@@ -1,5 +1,6 @@
 'use client';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import { useToolState } from '../../context/ToolStateContext';
 
 const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 const fmtSize = (b) => b > 1024 * 1024 ? (b / 1024 / 1024).toFixed(1) + ' MB' : (b / 1024).toFixed(0) + ' KB';
@@ -16,6 +17,12 @@ export default function WatermarkAdder() {
   const [result, setResult] = useState(null);
   const [error, setError] = useState('');
   const inputRef = useRef(null);
+  const { updateState } = useToolState();
+
+  // Push result to shared context for preview
+  useEffect(() => {
+    updateState('watermarkResult', result?.downloadUrl || null);
+  }, [result, updateState]);
 
   const handleFile = (f) => {
     if (!f) return;

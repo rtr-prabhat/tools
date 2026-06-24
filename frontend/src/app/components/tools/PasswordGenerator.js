@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import { useToolState } from '../../context/ToolStateContext';
 
 const CHARS = {
   upper: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -22,6 +23,17 @@ export default function PasswordGenerator() {
   const [password, setPassword] = useState('');
   const [show, setShow] = useState(false);
   const [copied, setCopied] = useState(false);
+  const { updateState } = useToolState();
+
+  const activeTypes = Object.values(options).filter(Boolean).length;
+  const strength = getStrength(length, activeTypes);
+
+  // Push password state to shared context for live preview
+  useEffect(() => {
+    updateState('password', password);
+    updateState('passwordStrength', strength);
+    updateState('passwordLength', length);
+  }, [password, strength, length, updateState]);
 
   const generate = useCallback(() => {
     const pool = Object.entries(options)
@@ -45,9 +57,6 @@ export default function PasswordGenerator() {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-
-  const activeTypes = Object.values(options).filter(Boolean).length;
-  const strength = getStrength(length, activeTypes);
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 space-y-5">
