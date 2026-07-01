@@ -70,6 +70,9 @@ export const mergePdfs = async (req, res) => {
 };
 
 export const downloadPdf = (req, res) => {
+  if (!/^[a-zA-Z0-9_.-]+$/.test(req.params.filename)) {
+    return res.status(400).json({ success: false, message: "Invalid filename" });
+  }
   const filePath = path.join(__dirname, "../../uploads", req.params.filename);
   if (!fs.existsSync(filePath)) return res.status(404).json({ success: false, message: "File not found" });
   res.download(filePath, () => {

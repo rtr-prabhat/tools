@@ -491,6 +491,694 @@ const toolContent = {
       ],
     },
   },
+  'convert-image': {
+    longDescription: 'Convert images between PNG, JPG, WebP, and AVIF formats online for free. Pick the right format for your website, app, or archive without installing any software.',
+    howToUse: [
+      'Upload the image you want to convert',
+      'Choose your target format: JPEG, PNG, WebP, or AVIF',
+      'Click "Convert" to process the file on our secure servers',
+      'Download the converted image instantly',
+    ],
+    benefits: [
+      'Convert between 4 popular formats in one click',
+      'Preserves image quality during conversion',
+      'No software installation or plugins required',
+      'Files deleted automatically after processing',
+    ],
+    faq: [
+      { q: 'Which format should I choose for my website?', a: 'WebP or AVIF offer the best compression for modern browsers. Use JPEG for maximum compatibility, PNG when you need transparency.' },
+      { q: 'Does converting reduce image quality?', a: 'Converting to a lossy format (JPEG, WebP) may cause minor quality loss. Converting to PNG preserves quality but increases file size.' },
+    ],
+    blogArticle: {
+      title: 'PNG vs JPG vs WebP vs AVIF: Which Image Format Should You Use?',
+      sections: [
+        { heading: 'Understanding the Four Formats', content: 'PNG is lossless and supports transparency — ideal for logos and graphics. JPEG uses lossy compression and works best for photographs. WebP, developed by Google, offers 25-35% smaller files than JPEG at similar quality. AVIF is the newest format, offering even better compression than WebP but with slightly less browser support as of now.' },
+        { heading: 'Choosing the Right Format for the Job', content: 'For product photos and blog images: WebP gives the best balance of quality and file size for modern sites. For logos and icons needing transparency: stick with PNG. For maximum compatibility with older systems or email clients: JPEG remains the safest choice. For cutting-edge performance where every kilobyte counts: AVIF delivers the smallest files.' },
+        { heading: 'Format Conversion Best Practices', content: 'Always keep a master copy in a lossless format before converting to lossy formats — repeated lossy conversions degrade quality further each time. Test your converted images across browsers if targeting newer formats like AVIF. For e-commerce and blogs, converting your existing JPEG/PNG library to WebP can meaningfully improve page load speed and SEO.' },
+      ],
+    },
+  },
+  'image-to-pdf': {
+    longDescription: 'Convert PNG or JPG images into a PDF document instantly. Perfect for combining scanned pages, receipts, or photos into a single shareable file.',
+    howToUse: [
+      'Upload the PNG or JPG image you want to convert',
+      'Click "Convert to PDF" to process the file',
+      'Download the generated PDF document',
+      'Share or print the PDF as needed',
+    ],
+    benefits: [
+      'Instant image-to-PDF conversion',
+      'Preserves original image resolution',
+      'No watermarks added to your document',
+      'Works entirely without signup',
+    ],
+    faq: [
+      { q: 'Can I combine multiple images into one PDF?', a: 'Currently this tool converts one image per PDF. For combining multiple documents, use our Merge PDF tool after converting each image.' },
+      { q: 'Will the PDF preserve image quality?', a: 'Yes, the image is embedded at its original resolution without recompression.' },
+    ],
+    blogArticle: {
+      title: 'Why Convert Images to PDF? Common Use Cases Explained',
+      sections: [
+        { heading: 'When You Need an Image as a PDF', content: 'PDFs are the standard format for official document submission — job applications, government forms, and academic records often require PDF uploads, not raw images. Converting a scanned document or photo to PDF also makes it easier to print consistently across devices and printers.' },
+        { heading: 'PDF vs Image: Which to Share?', content: 'Use PDF when the recipient needs to print, sign, or archive the document formally — banks, HR departments, and government portals typically prefer PDF. Use the raw image format when sharing casually on chat apps or social media, where PDFs can be inconvenient to preview.' },
+        { heading: 'Tips for Clean Image-to-PDF Conversion', content: 'Make sure your source image is well-lit and in focus before converting — the PDF will only be as clear as the original image. Crop out unnecessary borders before conversion for a cleaner final document. If you have multiple pages to submit, convert each one and use a PDF merge tool to combine them in order.' },
+      ],
+    },
+  },
+  'image-cropper': {
+    longDescription: 'Crop images to any custom size or standard aspect ratio — free, square, 4:3, or 16:9. Everything happens in your browser, so your photos never leave your device.',
+    howToUse: [
+      'Upload the image you want to crop',
+      'Drag the crop box or choose a preset aspect ratio (1:1, 4:3, 16:9, or free)',
+      'Adjust the crop area to frame your subject',
+      'Download the cropped image directly to your device',
+    ],
+    benefits: [
+      'Runs entirely in your browser — no upload required',
+      'Preset aspect ratios for social media and print',
+      'Free-form cropping for full creative control',
+      'Instant preview before download',
+    ],
+    faq: [
+      { q: 'Are my images uploaded to a server?', a: 'No. Cropping happens entirely in your browser using canvas — your image never leaves your device.' },
+      { q: 'Which aspect ratio should I use for Instagram?', a: 'Instagram posts work best at 1:1 (square) or 4:5 (portrait). Instagram Stories use 9:16.' },
+    ],
+    blogArticle: {
+      title: 'Image Cropping Guide: Aspect Ratios for Every Platform',
+      sections: [
+        { heading: 'Why Aspect Ratio Matters', content: 'Every platform displays images differently — a photo that looks great on your website might get awkwardly cropped in a social media feed. Cropping to the correct aspect ratio before uploading ensures your subject stays in frame exactly as intended.' },
+        { heading: 'Common Aspect Ratios and Their Uses', content: 'Square (1:1): Instagram posts, profile pictures. 4:3: Traditional photography, presentation slides. 16:9: YouTube thumbnails, website banners, widescreen displays. Free-form: Use when you need a custom, non-standard size for a specific design requirement.' },
+        { heading: 'Cropping Tips for Better Photos', content: 'Follow the rule of thirds — position your subject along the crop guide lines rather than dead center for a more balanced composition. Leave some breathing room around faces and important details before finalizing your crop. Always crop before compressing to avoid additional quality loss from double processing.' },
+      ],
+    },
+  },
+  'compress-pdf': {
+    longDescription: 'Reduce PDF file size while keeping the document readable. Perfect for email attachments, portal uploads with size limits, and faster sharing.',
+    howToUse: [
+      'Upload the PDF file you want to compress',
+      'Optionally set a target file size in KB',
+      'Click "Compress PDF" to process the document',
+      'Download the compressed PDF and check the size reduction achieved',
+    ],
+    benefits: [
+      'Reduces file size while preserving readability',
+      'Shows page count and compression percentage',
+      'Works with multi-page documents',
+      'Files are deleted from our server after download',
+    ],
+    faq: [
+      { q: 'Will compression affect text readability?', a: 'No, our compression optimizes the PDF structure without degrading text clarity.' },
+      { q: 'Is there a file size limit for upload?', a: 'Yes, uploads are limited to 20MB per file.' },
+    ],
+    blogArticle: {
+      title: 'How to Compress a PDF Without Losing Quality',
+      sections: [
+        { heading: 'Why PDFs Get So Large', content: 'PDFs often balloon in size due to embedded high-resolution images, unoptimized fonts, and redundant internal structures left over from editing. A scanned document, for instance, can be 10x larger than necessary if each page was saved as an uncompressed image.' },
+        { heading: 'When You Need a Smaller PDF', content: 'Most email providers cap attachments at 25MB. Government and job portals frequently enforce even stricter limits like 2MB or 5MB. Compressing your PDF before upload avoids frustrating rejection errors and speeds up sharing over slower internet connections.' },
+        { heading: 'Getting the Best Compression Results', content: 'If your PDF was created from scanned images, consider compressing the source images first for the biggest size reduction. Use the target size option to aim for a specific limit required by a portal or form. Always verify the compressed file still opens correctly and text remains legible before submitting it anywhere important.' },
+      ],
+    },
+  },
+  'merge-pdf': {
+    longDescription: 'Combine multiple PDF files into a single document in the order you choose. Ideal for merging invoices, reports, scanned pages, or application documents.',
+    howToUse: [
+      'Upload two or more PDF files (up to 10 at once)',
+      'Files are merged in the order they were uploaded',
+      'Click "Merge PDFs" to combine them into one document',
+      'Download the merged PDF instantly',
+    ],
+    benefits: [
+      'Merge up to 10 PDF files at once',
+      'Preserves original page formatting',
+      'No page limit on individual source files',
+      'Free with no watermark added',
+    ],
+    faq: [
+      { q: 'Can I reorder pages after merging?', a: 'Currently, files are merged in upload order. Upload them in the sequence you want the final document to follow.' },
+      { q: 'Is there a limit on the number of files?', a: 'You can merge up to 10 PDF files in a single operation.' },
+    ],
+    blogArticle: {
+      title: 'When and Why to Merge PDF Documents',
+      sections: [
+        { heading: 'Common Reasons to Merge PDFs', content: 'Job applicants often need to combine a resume, cover letter, and certificates into a single file for submission. Businesses merge invoices and receipts into one report for accounting. Students combine multiple scanned assignment pages into a single submission-ready document.' },
+        { heading: 'Keeping Your Merged Document Organized', content: 'Before merging, rename your source files with numbers (01-resume.pdf, 02-cover-letter.pdf) so the upload order matches your intended final sequence. Double-check page orientation in each source file — a mix of portrait and landscape pages can look inconsistent in the merged output.' },
+        { heading: 'After Merging: What to Check', content: 'Open the merged PDF and scroll through every page to confirm nothing is missing or duplicated. Verify the total page count matches your expectation. If the file will be printed, check that page sizes are consistent throughout the document.' },
+      ],
+    },
+  },
+  'pdf-to-image': {
+    longDescription: 'Convert PDF pages into high-quality PNG images. This tool is currently in development and will be available soon.',
+    howToUse: [
+      'This feature is coming soon',
+      'Check back for updates on availability',
+    ],
+    benefits: [
+      'Will support page-by-page PNG export',
+      'Planned high-resolution output',
+    ],
+    faq: [
+      { q: 'When will this tool be available?', a: 'We are working on adding PDF-to-image conversion. In the meantime, try our other PDF tools like Compress PDF and Merge PDF.' },
+    ],
+  },
+  'base64-encode': {
+    longDescription: 'Encode text to Base64 or decode Base64 back to plain text, instantly in your browser. Useful for developers working with data URIs, APIs, and file embedding.',
+    howToUse: [
+      'Paste the text you want to encode or decode',
+      'Choose "Encode" or "Decode" mode',
+      'View the result instantly below the input',
+      'Click "Copy" to save the output to your clipboard',
+    ],
+    benefits: [
+      'Instant Base64 encoding and decoding',
+      'Runs entirely in your browser — no data sent to a server',
+      'Useful for API tokens, data URIs, and email attachments',
+      'One-click copy for quick use in code',
+    ],
+    faq: [
+      { q: 'What is Base64 used for?', a: 'Base64 encodes binary data as text, commonly used for embedding images in HTML/CSS, encoding email attachments, and transmitting data in APIs.' },
+      { q: 'Is Base64 encryption?', a: 'No, Base64 is not encryption or security — it is a reversible encoding format and offers no confidentiality.' },
+    ],
+    blogArticle: {
+      title: 'Base64 Encoding Explained: What It Is and When to Use It',
+      sections: [
+        { heading: 'What Is Base64 Encoding?', content: 'Base64 is a method of converting binary data into a text format using 64 printable ASCII characters. It was designed so binary data — like images or files — could be safely transmitted through systems that only reliably support text, such as email and older APIs.' },
+        { heading: 'Common Use Cases', content: 'Embedding small images directly into HTML or CSS as data URIs to reduce HTTP requests. Encoding authentication credentials in API headers (like Basic Auth). Storing binary data such as file uploads inside JSON payloads. Encoding attachments in email protocols like MIME.' },
+        { heading: 'Base64 Is Not Encryption', content: 'A common misconception is that Base64 provides security — it does not. Anyone can decode Base64 instantly, as we demonstrate with this very tool. Never use Base64 alone to protect sensitive data like passwords; use proper encryption or hashing instead.' },
+      ],
+    },
+  },
+  'word-counter': {
+    longDescription: 'Count words, characters, sentences, and paragraphs in your text instantly. Also estimates reading time — perfect for writers, students, and content creators.',
+    howToUse: [
+      'Type or paste your text into the input box',
+      'View live counts for words, characters, sentences, and paragraphs',
+      'Check the estimated reading time',
+      'Edit your text and watch the counts update instantly',
+    ],
+    benefits: [
+      'Real-time counting as you type',
+      'Tracks words, characters, sentences, and paragraphs',
+      'Reading time estimate based on average reading speed',
+      'No signup, works entirely in your browser',
+    ],
+    faq: [
+      { q: 'How is reading time calculated?', a: 'Reading time is estimated using an average adult reading speed of about 200-250 words per minute.' },
+      { q: 'Does it count characters with or without spaces?', a: 'The tool shows both character counts — with spaces and without — so you can match specific submission requirements.' },
+    ],
+    blogArticle: {
+      title: 'Why Word Count Matters for Writers, Students, and SEO',
+      sections: [
+        { heading: 'Word Count in Academic and Professional Writing', content: 'Essays, assignments, and job applications often specify strict word limits. Exceeding or falling short can affect grading or how your application is received. A reliable word counter helps you stay within requirements without manually counting.' },
+        { heading: 'Word Count and SEO Content', content: 'Search engines tend to favor comprehensive content, but quality matters more than raw length. Most well-ranking blog posts fall between 1,000-2,000 words for informational topics, though the right length depends entirely on the topic and search intent.' },
+        { heading: 'Improving Readability, Not Just Length', content: 'Long sentences and dense paragraphs hurt readability regardless of word count. Break up your content into shorter paragraphs and sentences. Use our tool alongside a readability check to strike the right balance between comprehensive and easy to read.' },
+      ],
+    },
+  },
+  'number-to-words': {
+    longDescription: 'Convert numbers into Indian-format words instantly — perfect for writing cheques, legal documents, and financial paperwork where amounts must be spelled out.',
+    howToUse: [
+      'Enter the number you want to convert',
+      'View the result instantly in Indian numbering words (lakh, crore)',
+      'Copy the result for use in cheques or documents',
+    ],
+    benefits: [
+      'Uses Indian numbering system (lakh, crore) not Western (million, billion)',
+      'Instant conversion as you type',
+      'Ideal for cheque writing and financial documentation',
+      'No signup required',
+    ],
+    faq: [
+      { q: 'Does it use lakh/crore or million/billion?', a: 'This tool uses the Indian numbering system — lakh and crore — matching how amounts are written on Indian cheques and legal documents.' },
+      { q: 'Can I convert decimal amounts?', a: 'Yes, decimal values are converted with the paise/decimal portion spelled out separately.' },
+    ],
+    blogArticle: {
+      title: 'Indian Numbering System Explained: Lakh, Crore, and Cheque Writing',
+      sections: [
+        { heading: 'Understanding Lakh and Crore', content: 'India uses a numbering system distinct from the Western million/billion system. One lakh equals 1,00,000 (100,000), and one crore equals 1,00,00,000 (10,000,000). Numbers are grouped in twos after the first three digits — hence "1,00,000" rather than "100,000".' },
+        { heading: 'Why Spelling Out Numbers Matters', content: 'Indian banks require the amount on a cheque to be written in words to prevent tampering or misreading of numerals. An error in this line is one of the most common reasons cheques get rejected or returned by banks.' },
+        { heading: 'Tips for Writing Cheques Correctly', content: 'Always start the words as close to the left margin as possible to prevent anyone from adding extra words before your amount. Write "only" at the end of the amount to close the line. Double-check that the numeric and word amounts match exactly before submitting.' },
+      ],
+    },
+  },
+  'url-encoder': {
+    longDescription: 'Encode or decode URLs and query string parameters instantly. Essential for developers handling special characters, spaces, and non-ASCII text in web addresses.',
+    howToUse: [
+      'Paste the URL or text you want to encode or decode',
+      'Choose "Encode" or "Decode" mode',
+      'View the result instantly',
+      'Copy the encoded/decoded output for use in your application',
+    ],
+    benefits: [
+      'Instant URL encoding and decoding',
+      'Handles special characters and query parameters correctly',
+      'Runs entirely in your browser',
+      'Useful for debugging APIs and web links',
+    ],
+    faq: [
+      { q: 'Why do URLs need encoding?', a: 'URLs can only contain a limited set of ASCII characters. Spaces, symbols, and non-English characters must be percent-encoded to be transmitted correctly.' },
+      { q: 'What does %20 mean?', a: '%20 is the percent-encoded representation of a space character in a URL.' },
+    ],
+    blogArticle: {
+      title: 'URL Encoding Explained: Why %20 and Other Codes Exist',
+      sections: [
+        { heading: 'What Is URL Encoding?', content: 'URL encoding (also called percent-encoding) converts characters that are unsafe or reserved in a URL into a format that can be safely transmitted over the internet. For example, a space becomes %20, and an ampersand used in text becomes %26.' },
+        { heading: 'When Developers Need URL Encoding', content: 'Passing user input as a query parameter — like a search term with spaces or special characters. Building API request URLs that include dynamic values. Sharing links that contain non-English characters, such as names in Hindi or other Indian languages.' },
+        { heading: 'Common Encoding Mistakes', content: 'Double-encoding a URL that is already encoded can corrupt the link. Forgetting to encode reserved characters like &, =, and ? within parameter values can break query string parsing. Always encode individual parameter values, not the entire URL structure, to avoid breaking the protocol and domain portions.' },
+      ],
+    },
+  },
+  'currency-converter': {
+    longDescription: 'Convert between Indian Rupees and 15+ global currencies using live exchange rates. Ideal for travelers, freelancers, and businesses dealing with international payments.',
+    howToUse: [
+      'Enter the amount you want to convert',
+      'Select the source currency and target currency',
+      'View the converted amount instantly',
+      'Use the swap button to quickly reverse the conversion',
+    ],
+    benefits: [
+      'Supports INR and 15+ major global currencies',
+      'Uses up-to-date exchange rates',
+      'Quick swap for reverse conversion',
+      'Free with no signup required',
+    ],
+    faq: [
+      { q: 'How current are the exchange rates?', a: 'Exchange rates are fetched from a live currency data source and refreshed regularly, though rates can fluctuate throughout the trading day.' },
+      { q: 'Can I use this for official transactions?', a: 'This tool is for reference and estimation purposes. For official transactions, always confirm the exact rate with your bank or payment provider.' },
+    ],
+    blogArticle: {
+      title: 'Understanding Currency Exchange Rates for Everyday Use',
+      sections: [
+        { heading: 'What Determines Exchange Rates?', content: 'Currency exchange rates fluctuate based on factors like interest rates, inflation, trade balances, and market sentiment. The rate you see on a converter reflects the mid-market rate — the midpoint between buy and sell prices in the global currency market.' },
+        { heading: 'Mid-Market Rate vs What You Actually Pay', content: 'Banks and money changers typically add a margin on top of the mid-market rate, meaning the rate you get when converting cash or making an international transfer is usually less favorable than the rate shown on a converter. Always compare the effective rate, including fees, before an international transaction.' },
+        { heading: 'Tips for International Money Transfers', content: 'Compare rates and fees across multiple providers before sending money abroad — the difference can be significant on larger amounts. Time transfers when possible to avoid highly volatile market periods. Use a currency converter to sanity-check the rate offered by any provider before committing.' },
+      ],
+    },
+  },
+  'ocr-tool': {
+    longDescription: 'Extract text from images using AI-powered OCR (Optical Character Recognition) technology, running directly in your browser. Turn scanned documents and photos into editable text.',
+    howToUse: [
+      'Upload an image containing text you want to extract',
+      'Wait while the OCR engine processes the image',
+      'View the extracted text in the output box',
+      'Copy the text for use elsewhere',
+    ],
+    benefits: [
+      'AI-powered text recognition running in your browser',
+      'Supports scanned documents, screenshots, and photos',
+      'No file upload to a server — processing happens on your device',
+      'Free with no usage limits',
+    ],
+    faq: [
+      { q: 'What image quality works best for OCR?', a: 'Clear, well-lit images with straight (non-tilted) text produce the most accurate results. Blurry or low-contrast images may reduce accuracy.' },
+      { q: 'Does this support handwritten text?', a: 'OCR works best with printed text. Handwriting recognition is significantly less accurate and results may vary.' },
+    ],
+    blogArticle: {
+      title: 'OCR Technology Explained: Turning Images Into Editable Text',
+      sections: [
+        { heading: 'What Is OCR and How Does It Work?', content: 'Optical Character Recognition (OCR) analyzes the shapes and patterns in an image to identify individual characters and reconstruct them as machine-readable text. Modern OCR engines use trained models to recognize fonts, handwriting styles, and layouts with high accuracy.' },
+        { heading: 'Common Uses for OCR', content: 'Digitizing printed documents and old paper records for easy searching and editing. Extracting text from screenshots when copy-paste is not available. Converting scanned receipts or invoices into editable data for expense tracking. Pulling quotes or reference text from photographed book pages.' },
+        { heading: 'Getting the Best OCR Accuracy', content: 'Take photos in good lighting and avoid shadows across the text. Keep the camera parallel to the document to avoid distortion. Crop out unnecessary background before uploading. Higher resolution images generally produce more accurate text extraction.' },
+      ],
+    },
+  },
+  'markdown-preview': {
+    longDescription: 'Write Markdown and see a live formatted preview as you type. Export your document as a PDF — great for README files, notes, and documentation.',
+    howToUse: [
+      'Type or paste your Markdown text into the editor',
+      'View the live formatted preview on the right',
+      'Use standard Markdown syntax for headings, lists, links, and code blocks',
+      'Download the rendered output as a PDF when finished',
+    ],
+    benefits: [
+      'Real-time Markdown rendering as you type',
+      'Supports headings, lists, links, images, and code blocks',
+      'Export directly to PDF',
+      'No signup or installation required',
+    ],
+    faq: [
+      { q: 'What Markdown syntax is supported?', a: 'Standard Markdown syntax is supported, including headings (#), bold/italic, lists, links, images, blockquotes, and code blocks.' },
+      { q: 'Can I save my Markdown file?', a: 'You can copy the raw Markdown text, or download the rendered preview as a PDF.' },
+    ],
+    blogArticle: {
+      title: 'Markdown for Beginners: Why Writers and Developers Love It',
+      sections: [
+        { heading: 'What Is Markdown?', content: 'Markdown is a lightweight markup language that lets you format text using simple, readable symbols instead of complex formatting menus. A line starting with # becomes a heading, text wrapped in ** becomes bold — no mouse clicks required.' },
+        { heading: 'Why Markdown Is So Widely Used', content: 'GitHub README files, technical documentation, note-taking apps like Notion and Obsidian, and blogging platforms all support Markdown because it is fast to write, easy to read even unrendered, and portable across tools without formatting breaking.' },
+        { heading: 'Markdown Tips for Clean Documents', content: 'Use a single # for the main title and increase # symbols for subheadings to maintain a clear hierarchy. Leave a blank line between paragraphs — Markdown treats single line breaks as part of the same paragraph. Use code blocks (triple backticks) for any code snippets to preserve formatting and spacing.' },
+      ],
+    },
+  },
+  'income-tax-calculator': {
+    longDescription: 'Compare the Old and New income tax regimes for FY 2024-25 and find out which one saves you more money based on your income and deductions.',
+    howToUse: [
+      'Enter your annual gross income',
+      'Add applicable deductions (80C, HRA, standard deduction, etc.) for the old regime comparison',
+      'View your tax liability under both Old and New regimes side by side',
+      'See which regime results in lower tax and by how much',
+    ],
+    benefits: [
+      'Side-by-side comparison of Old vs New tax regime',
+      'Updated for FY 2024-25 tax slabs',
+      'Accounts for common deductions and exemptions',
+      'Helps you make an informed regime choice before filing',
+    ],
+    faq: [
+      { q: 'Which regime should I choose?', a: 'If you claim significant deductions (80C, HRA, home loan interest), the Old Regime may save more. If you have few deductions, the New Regime\'s lower slab rates often work out better. Compare both using this calculator with your actual numbers.' },
+      { q: 'Can I switch between regimes every year?', a: 'Salaried individuals can generally choose a different regime each financial year. Those with business income have more restrictions on switching. Confirm your specific eligibility with a tax professional.' },
+    ],
+    blogArticle: {
+      title: 'Old vs New Tax Regime: Which One Should You Choose?',
+      sections: [
+        { heading: 'The Key Difference', content: 'The Old Tax Regime offers lower effective tax through deductions and exemptions like 80C investments, HRA, and home loan interest, but at higher slab rates. The New Tax Regime offers lower slab rates but removes most deductions and exemptions, aiming for simplicity.' },
+        { heading: 'When the Old Regime Wins', content: 'If you actively invest in tax-saving instruments (PPF, ELSS, life insurance) and claim HRA or a home loan, your effective taxable income drops significantly under the Old Regime, often resulting in lower overall tax despite higher slab rates.' },
+        { heading: 'When the New Regime Wins', content: 'If you don\'t have many deductions to claim, or you prefer a simpler filing process without tracking multiple investment proofs, the New Regime\'s lower slab rates can result in less tax paid overall. Younger earners early in their careers, with fewer investments, often benefit more from the New Regime.' },
+        { heading: 'How to Decide', content: 'The only reliable way to choose is to calculate your actual tax liability under both regimes using your real income and deduction figures — exactly what this calculator does. Revisit the comparison each year, as your income and investments change.' },
+      ],
+    },
+  },
+  'ppf-calculator': {
+    longDescription: 'Calculate your Public Provident Fund (PPF) maturity amount with a year-wise interest breakdown. Plan your long-term, tax-free savings with confidence.',
+    howToUse: [
+      'Enter your annual PPF contribution amount',
+      'Input the current PPF interest rate',
+      'Set your investment tenure (minimum 15 years)',
+      'View your maturity amount and year-wise growth breakdown',
+    ],
+    benefits: [
+      'Year-wise interest and balance breakdown',
+      'Accounts for the standard 15-year PPF lock-in',
+      'Shows the power of compounding on tax-free returns',
+      'Helps plan extensions beyond the initial 15-year term',
+    ],
+    faq: [
+      { q: 'What is the current PPF interest rate?', a: 'PPF interest rates are set by the government quarterly and typically range between 7-8%. Check the current rate before finalizing your calculation, as it can change.' },
+      { q: 'Is PPF interest taxable?', a: 'No, PPF falls under the EEE (Exempt-Exempt-Exempt) category — contributions, interest, and maturity amount are all tax-free.' },
+    ],
+    blogArticle: {
+      title: 'PPF Explained: India\'s Most Popular Tax-Free Savings Scheme',
+      sections: [
+        { heading: 'What Makes PPF Attractive', content: 'The Public Provident Fund is a government-backed savings scheme offering guaranteed, tax-free returns with one of the safest risk profiles available to Indian investors. Contributions up to ₹1.5 lakh per year also qualify for deduction under Section 80C.' },
+        { heading: 'Understanding the 15-Year Lock-In', content: 'PPF has a mandatory 15-year lock-in period, though partial withdrawals are allowed after the 7th year under specific conditions. After maturity, the account can be extended in blocks of 5 years, with or without further contributions, continuing to earn interest.' },
+        { heading: 'Maximizing Your PPF Returns', content: 'Interest is calculated on the lowest balance between the 5th and last day of each month, so depositing before the 5th of the month maximizes interest earned. Consistent annual contributions, ideally at the start of the financial year, significantly boost the compounding effect over 15+ years.' },
+      ],
+    },
+  },
+  'hra-calculator': {
+    longDescription: 'Calculate your House Rent Allowance (HRA) exemption to reduce your taxable income. Understand exactly how much of your HRA is tax-exempt based on your salary and rent.',
+    howToUse: [
+      'Enter your basic salary and HRA received',
+      'Input the actual rent you pay',
+      'Select whether you live in a metro or non-metro city',
+      'View your HRA exemption amount and taxable HRA',
+    ],
+    benefits: [
+      'Accurate HRA exemption calculation per Income Tax rules',
+      'Accounts for metro vs non-metro city differences',
+      'Shows taxable vs exempt HRA breakdown clearly',
+      'Helps optimize your tax planning before filing',
+    ],
+    faq: [
+      { q: 'How is HRA exemption calculated?', a: 'HRA exemption is the lowest of: actual HRA received, rent paid minus 10% of basic salary, or 50% of basic salary (metro) / 40% (non-metro).' },
+      { q: 'Can I claim HRA if I live in my own house?', a: 'No, HRA exemption requires you to actually pay rent for accommodation you live in. It cannot be claimed if you own and reside in your own home.' },
+    ],
+    blogArticle: {
+      title: 'HRA Exemption Explained: How to Save Tax on Rent Paid',
+      sections: [
+        { heading: 'What Is HRA and Who Can Claim It', content: 'House Rent Allowance is a salary component paid by employers to help cover housing costs. Salaried employees who pay rent for their residence can claim a portion of this HRA as tax-exempt, reducing their overall taxable income — but only under the Old Tax Regime.' },
+        { heading: 'The Three-Way Minimum Rule', content: 'The exempt HRA amount is always the lowest of three figures: the actual HRA received from your employer, the rent paid minus 10% of your basic salary, or 50% of basic salary for metro cities (Delhi, Mumbai, Kolkata, Chennai) or 40% for other cities.' },
+        { heading: 'Documentation You Need', content: 'Keep rent receipts and, if annual rent exceeds ₹1 lakh, your landlord\'s PAN details — both are typically required by employers to process the HRA exemption. Rent agreements and bank transfer records for rent payments also strengthen your claim in case of scrutiny.' },
+      ],
+    },
+  },
+  'invoice-generator': {
+    longDescription: 'Create professional GST-compliant invoices and download them as PDF in minutes. Ideal for freelancers, small businesses, and consultants in India.',
+    howToUse: [
+      'Enter your business details and client information',
+      'Add line items with quantity, rate, and applicable GST',
+      'Review the auto-calculated totals including tax breakdown',
+      'Download the finished invoice as a PDF',
+    ],
+    benefits: [
+      'GST-compliant invoice format with tax breakdown',
+      'Professional layout ready to send to clients',
+      'Auto-calculates subtotal, tax, and grand total',
+      'Download as PDF — no signup required',
+    ],
+    faq: [
+      { q: 'Is this invoice GST-compliant?', a: 'The generated invoice includes standard fields required for GST invoicing, including GSTIN, HSN/SAC codes, and tax breakdown. Verify it meets your specific business filing requirements.' },
+      { q: 'Can I save invoices for later editing?', a: 'Invoices are generated on demand in your browser session. Download and save the PDF for your records, as data is not stored on our servers.' },
+    ],
+    blogArticle: {
+      title: 'What Every Small Business Invoice in India Must Include',
+      sections: [
+        { heading: 'Mandatory Fields for a GST Invoice', content: 'A valid GST invoice must include the supplier\'s name, address, and GSTIN, a unique invoice number and date, the recipient\'s details, HSN/SAC codes for goods or services, and a clear breakdown of taxable value, CGST/SGST or IGST, and the total amount.' },
+        { heading: 'Why Professional Invoicing Matters', content: 'A clear, professional invoice speeds up payment collection and reduces disputes over amounts owed. It also serves as essential documentation for your own GST filing and income tax records, making bookkeeping significantly easier at year-end.' },
+        { heading: 'Common Invoicing Mistakes to Avoid', content: 'Forgetting to sequentially number invoices can cause compliance issues during GST audits. Missing HSN/SAC codes or incorrect tax rates are common rejection reasons for input tax credit claims by your clients. Always double-check calculations before sending — small errors compound into bigger accounting headaches later.' },
+      ],
+    },
+  },
+  'signature-maker': {
+    longDescription: 'Draw your digital signature on a canvas using your mouse, trackpad, or touchscreen, then download it as a transparent PNG for documents and forms.',
+    howToUse: [
+      'Use your mouse, trackpad, or finger to draw your signature on the canvas',
+      'Adjust pen thickness and color if needed',
+      'Click "Clear" to redo if you make a mistake',
+      'Download your signature as a PNG image',
+    ],
+    benefits: [
+      'Draw naturally with mouse, trackpad, or touchscreen',
+      'Transparent background PNG output',
+      'No signup or software installation required',
+      'Instant download for use in documents',
+    ],
+    faq: [
+      { q: 'Is the downloaded signature background transparent?', a: 'Yes, the PNG is exported with a transparent background so it overlays cleanly on any document.' },
+      { q: 'Can I use this for legally binding signatures?', a: 'This tool creates a visual signature image. For legally binding e-signatures on contracts, use a certified e-signature service that meets legal requirements in your jurisdiction.' },
+    ],
+    blogArticle: {
+      title: 'Digital Signatures 101: Creating and Using a Signature Image',
+      sections: [
+        { heading: 'Visual Signature vs Legal E-Signature', content: 'A visual signature image — like the one this tool creates — is a picture of your handwriting for use on forms, letters, or documents where a scanned or drawn signature is sufficient. A legal e-signature, used for contracts and official agreements, requires cryptographic verification through certified providers to be enforceable.' },
+        { heading: 'Where a Signature Image Works Well', content: 'Signing off on personal letters, adding a signature to a resume or cover letter, personalizing digital greeting cards, or inserting into internal company documents where formal e-signature verification isn\'t required.' },
+        { heading: 'Tips for a Clean Digital Signature', content: 'Use a trackpad or touchscreen for smoother strokes than a mouse. Practice a few times before finalizing — the "Clear" button lets you redo without hassle. Keep the signature reasonably sized and legible so it looks professional when placed on documents.' },
+      ],
+    },
+  },
+  'typing-speed-test': {
+    longDescription: 'Measure your typing speed in Words Per Minute (WPM) along with accuracy tracking. Practice and improve your typing skills for free.',
+    howToUse: [
+      'Click "Start" to begin the typing test',
+      'Type the displayed text as quickly and accurately as possible',
+      'View your WPM and accuracy percentage when you finish',
+      'Click "Try Again" to practice and improve your score',
+    ],
+    benefits: [
+      'Accurate WPM and accuracy tracking',
+      'Randomized text passages for varied practice',
+      'Instant results with detailed feedback',
+      'Free unlimited practice attempts',
+    ],
+    faq: [
+      { q: 'What is a good typing speed?', a: 'Average typing speed is around 40 WPM. Professional typists often reach 65-75 WPM, while highly skilled typists can exceed 100 WPM.' },
+      { q: 'How is accuracy calculated?', a: 'Accuracy is calculated as the percentage of correctly typed characters out of the total characters typed, including any mistakes.' },
+    ],
+    blogArticle: {
+      title: 'How to Improve Your Typing Speed: A Practical Guide',
+      sections: [
+        { heading: 'Why Typing Speed Matters', content: 'Faster, more accurate typing saves hours over a work week, whether you\'re writing emails, coding, or preparing documents. Typing speed is also a common screening criterion for data entry and customer support roles in India.' },
+        { heading: 'Proper Typing Technique', content: 'Use all ten fingers with your hands resting on the home row (ASDF for the left hand, JKL; for the right). Avoid looking at the keyboard — touch typing relies on muscle memory built through consistent practice. Sit with good posture and keep wrists relaxed to avoid strain during long typing sessions.' },
+        { heading: 'A Practice Routine That Works', content: 'Practice for 15-20 minutes daily rather than long infrequent sessions — consistency builds muscle memory faster than cramming. Focus on accuracy first; speed naturally follows once you stop making frequent mistakes. Use this test weekly to track your progress and stay motivated.' },
+      ],
+    },
+  },
+  'pomodoro-timer': {
+    longDescription: 'Stay focused and productive using the proven Pomodoro Technique — 25-minute focused work sessions followed by short breaks. Free and works in your browser.',
+    howToUse: [
+      'Click "Start" to begin a 25-minute focused work session',
+      'Work on a single task until the timer ends',
+      'Take the prompted 5-minute break when the session completes',
+      'After 4 sessions, take a longer 15-30 minute break',
+    ],
+    benefits: [
+      'Classic 25/5 Pomodoro cycle built in',
+      'Audio/visual alerts when sessions end',
+      'Helps reduce procrastination and mental fatigue',
+      'No signup — just open and start focusing',
+    ],
+    faq: [
+      { q: 'Why 25 minutes specifically?', a: '25 minutes is short enough to maintain intense focus without fatigue, yet long enough to make meaningful progress on a task. This interval was popularized by Francesco Cirillo\'s original Pomodoro Technique.' },
+      { q: 'Can I customize the session length?', a: 'The tool follows the standard 25/5 Pomodoro cycle. For custom intervals, adjust your own work/break timing manually.' },
+    ],
+    blogArticle: {
+      title: 'The Pomodoro Technique: Why It Works and How to Use It Well',
+      sections: [
+        { heading: 'The Science Behind Pomodoro', content: 'The Pomodoro Technique leverages how our brains handle sustained attention — working in focused, time-boxed sprints reduces the mental fatigue that comes from open-ended work sessions, while scheduled breaks prevent burnout and help consolidate what you\'ve just worked on.' },
+        { heading: 'Getting the Most Out of Each Session', content: 'Choose a single, specific task before starting the timer — vague goals like "work on project" reduce focus. Turn off notifications during the 25-minute sprint to eliminate context-switching, one of the biggest productivity killers.' },
+        { heading: 'Building a Sustainable Pomodoro Habit', content: 'Track how many Pomodoros a task actually takes versus your initial estimate — this improves future time planning significantly. Use the longer break after 4 cycles to genuinely step away from your screen, not just switch to a different task.' },
+      ],
+    },
+  },
+  'text-to-speech': {
+    longDescription: 'Convert any text into natural-sounding speech using your browser\'s built-in voice engine. Free, instant, and works without any downloads.',
+    howToUse: [
+      'Type or paste the text you want to convert to speech',
+      'Choose a voice and adjust speed if available',
+      'Click "Speak" to hear the text read aloud',
+      'Pause or stop playback anytime',
+    ],
+    benefits: [
+      'Uses your browser\'s built-in speech engine — no downloads',
+      'Multiple voice options depending on your device',
+      'Adjustable playback speed',
+      'Free with no character limits imposed by us',
+    ],
+    faq: [
+      { q: 'Why do the available voices vary?', a: 'Voice options depend on your operating system and browser\'s built-in text-to-speech engine, which is why voice availability differs between devices.' },
+      { q: 'Can I download the audio?', a: 'This tool plays speech directly in your browser. For downloadable audio files, a dedicated TTS export service would be needed.' },
+    ],
+    blogArticle: {
+      title: 'Text-to-Speech: Practical Uses Beyond Accessibility',
+      sections: [
+        { heading: 'Who Benefits from Text-to-Speech', content: 'TTS is essential for visually impaired users navigating digital content, but it\'s increasingly used by everyone — commuters listening to articles instead of reading, language learners hearing correct pronunciation, and proofreaders catching errors by ear that they missed by eye.' },
+        { heading: 'Using TTS for Proofreading', content: 'Listening to your own writing read aloud is one of the most effective proofreading techniques — awkward phrasing and missing words become obvious when heard rather than read, since your brain tends to auto-correct visual reading errors.' },
+        { heading: 'Tips for Better TTS Output', content: 'Use proper punctuation — commas and periods control natural pausing in speech synthesis. Spell out abbreviations if the voice mispronounces them. Break very long text into shorter sections for easier listening and navigation.' },
+      ],
+    },
+  },
+  'hash-generator': {
+    longDescription: 'Generate SHA-1, SHA-256, SHA-384, and SHA-512 cryptographic hashes for any text input. Essential for developers verifying data integrity and building secure applications.',
+    howToUse: [
+      'Enter the text you want to hash',
+      'View the generated hash for each algorithm (SHA-1, SHA-256, SHA-384, SHA-512)',
+      'Click "Copy" next to any hash to copy it to your clipboard',
+    ],
+    benefits: [
+      'Generates 4 hash algorithms simultaneously',
+      'Runs entirely in your browser using the Web Crypto API',
+      'Useful for checksums, data verification, and development',
+      'No data sent to any server',
+    ],
+    faq: [
+      { q: 'Which hash algorithm should I use?', a: 'SHA-256 is the current industry standard for most applications. SHA-1 is considered weak for security purposes and should only be used for non-security checksums.' },
+      { q: 'Can I reverse a hash back to the original text?', a: 'No, cryptographic hashes are one-way functions by design — they cannot be reversed to recover the original input.' },
+    ],
+    blogArticle: {
+      title: 'Cryptographic Hashing Explained: SHA-1 vs SHA-256 vs SHA-512',
+      sections: [
+        { heading: 'What Is a Cryptographic Hash?', content: 'A cryptographic hash function takes any input and produces a fixed-length string of characters — the same input always produces the same hash, but even a tiny change in input produces a completely different output. This makes hashes useful for verifying data hasn\'t been tampered with.' },
+        { heading: 'Comparing the Algorithms', content: 'SHA-1 produces a 160-bit hash but has known vulnerabilities and is no longer recommended for security-critical use. SHA-256 (part of the SHA-2 family) produces a 256-bit hash and is the current standard for password hashing frameworks, blockchain, and TLS certificates. SHA-384 and SHA-512 offer even longer hash outputs for applications requiring extra collision resistance.' },
+        { heading: 'Common Uses for Hashing', content: 'Verifying downloaded file integrity by comparing published checksums. Storing password hashes instead of plain text (typically combined with additional techniques like salting). Generating unique identifiers for data deduplication. Blockchain systems rely heavily on SHA-256 for block verification.' },
+      ],
+    },
+  },
+  'regex-tester': {
+    longDescription: 'Test regular expressions against sample text with live match highlighting and capture group inspection. A must-have tool for developers working with pattern matching.',
+    howToUse: [
+      'Enter your regular expression pattern',
+      'Paste or type the test text',
+      'View live-highlighted matches and any captured groups',
+      'Adjust flags (global, case-insensitive, multiline) as needed',
+    ],
+    benefits: [
+      'Live match highlighting as you type',
+      'Shows captured groups for complex patterns',
+      'Supports standard regex flags',
+      'Runs entirely in your browser',
+    ],
+    faq: [
+      { q: 'What regex flavor does this use?', a: 'This tool uses JavaScript\'s native RegExp engine, which is the standard flavor used in web development.' },
+      { q: 'What do the g, i, and m flags mean?', a: 'g (global) finds all matches instead of stopping at the first. i (case-insensitive) ignores letter casing. m (multiline) makes ^ and $ match line boundaries within the text.' },
+    ],
+    blogArticle: {
+      title: 'Regular Expressions for Beginners: A Practical Introduction',
+      sections: [
+        { heading: 'What Are Regular Expressions?', content: 'A regular expression (regex) is a sequence of characters that defines a search pattern, used for matching, extracting, or replacing text. Regex is used everywhere in software development — form validation, search functionality, log parsing, and data extraction.' },
+        { heading: 'Common Regex Patterns to Know', content: '\\d matches any digit, \\w matches any word character, . matches any character except a newline, + means one or more repetitions, and * means zero or more. Combining these builds powerful patterns — for example, ^[\\w.-]+@[\\w.-]+\\.\\w+$ roughly matches an email address format.' },
+        { heading: 'Testing Regex Effectively', content: 'Always test your pattern against both valid and invalid examples to check for false positives and false negatives. Watch out for greedy quantifiers (* and +) that can match more text than intended — use non-greedy versions (*? and +?) when you need the shortest possible match.' },
+      ],
+    },
+  },
+  'jwt-decoder': {
+    longDescription: 'Decode and inspect JSON Web Tokens (JWT) to view the header, payload, and expiry information. Essential for developers debugging authentication and API tokens.',
+    howToUse: [
+      'Paste your JWT token into the input field',
+      'View the decoded header and payload as formatted JSON',
+      'Check the expiry timestamp and other claims',
+    ],
+    benefits: [
+      'Instantly decodes header and payload sections',
+      'Highlights expiry and standard claims',
+      'Runs entirely in your browser — tokens are never sent anywhere',
+      'Useful for debugging authentication issues',
+    ],
+    faq: [
+      { q: 'Does this verify the token signature?', a: 'No, this tool only decodes and displays the header and payload. It does not verify the cryptographic signature, since that requires the secret key or public key.' },
+      { q: 'Is my token sent to a server?', a: 'No, JWT decoding happens entirely in your browser. Your token is never transmitted anywhere.' },
+    ],
+    blogArticle: {
+      title: 'Understanding JWTs: How JSON Web Tokens Work',
+      sections: [
+        { heading: 'The Structure of a JWT', content: 'A JWT consists of three Base64URL-encoded parts separated by dots: a header (specifying the algorithm), a payload (containing claims like user ID and expiry), and a signature (verifying the token hasn\'t been tampered with).' },
+        { heading: 'Why JWTs Are Used for Authentication', content: 'JWTs allow stateless authentication — the server doesn\'t need to store session data, since all necessary information is embedded in the token itself and verified via its signature. This makes JWTs popular for scalable APIs and microservices.' },
+        { heading: 'Security Considerations', content: 'Never store sensitive data like passwords in a JWT payload — the payload is only encoded, not encrypted, meaning anyone can read it (as this tool demonstrates). Always set a reasonable expiry time, and verify signatures server-side before trusting any claims in a token.' },
+      ],
+    },
+  },
+  'lorem-ipsum': {
+    longDescription: 'Generate placeholder Lorem Ipsum text in paragraphs, sentences, or words — perfect for mockups, wireframes, and design layouts before real content is ready.',
+    howToUse: [
+      'Choose your output type: paragraphs, sentences, or words',
+      'Set the quantity you need',
+      'Click "Generate" to create placeholder text',
+      'Copy the generated text for use in your design or document',
+    ],
+    benefits: [
+      'Generate paragraphs, sentences, or words on demand',
+      'Classic Lorem Ipsum text for authentic-looking mockups',
+      'Instant copy for design tools and CMS platforms',
+      'No signup required',
+    ],
+    faq: [
+      { q: 'What is Lorem Ipsum text?', a: 'Lorem Ipsum is scrambled Latin-derived placeholder text used in publishing and design since the 1500s, valued because its neutral, non-distracting appearance mimics real text without conveying actual meaning.' },
+      { q: 'Why not just use real text for mockups?', a: 'Real text can distract stakeholders during design review, pulling focus toward wording rather than layout. Lorem Ipsum keeps attention on visual design and typography.' },
+    ],
+    blogArticle: {
+      title: 'Lorem Ipsum: The Story Behind Design\'s Favorite Placeholder Text',
+      sections: [
+        { heading: 'Where Lorem Ipsum Comes From', content: 'Lorem Ipsum text is derived from a passage in Cicero\'s "de Finibus Bonorum et Malorum," written in 45 BC. It has been used as filler text since the 1500s, when a printer scrambled a type specimen book — the garbled Latin has remained a design industry standard ever since.' },
+        { heading: 'When to Use Placeholder Text', content: 'Use it during wireframing and early design stages when layout and typography matter more than actual copy. It\'s especially useful for client presentations where you want feedback on visual structure, not draft wording that might get mistaken for final content.' },
+        { heading: 'When to Avoid It', content: 'Never ship placeholder text to production — it looks unprofessional and confuses real users. Also avoid it when testing content-dependent features like search or character limits, since Lorem Ipsum\'s consistent structure doesn\'t reflect real-world text variability.' },
+      ],
+    },
+  },
+  'csv-json-converter': {
+    longDescription: 'Convert CSV data to JSON or JSON to CSV instantly. Useful for developers, analysts, and anyone moving data between spreadsheets and APIs.',
+    howToUse: [
+      'Paste your CSV or JSON data into the input box',
+      'Select the conversion direction: CSV to JSON or JSON to CSV',
+      'Click "Convert" to see the transformed output',
+      'Copy or download the converted data',
+    ],
+    benefits: [
+      'Bidirectional CSV/JSON conversion',
+      'Handles nested and flat data structures',
+      'Runs entirely in your browser',
+      'Useful for spreadsheet-to-API workflows',
+    ],
+    faq: [
+      { q: 'Can it handle large CSV files?', a: 'Yes, though very large files may be limited by your browser\'s available memory since processing happens client-side.' },
+      { q: 'What if my CSV has commas inside values?', a: 'Properly quoted CSV values (using double quotes around fields containing commas) are parsed correctly.' },
+    ],
+    blogArticle: {
+      title: 'CSV vs JSON: Choosing the Right Format for Your Data',
+      sections: [
+        { heading: 'CSV and JSON: Two Different Philosophies', content: 'CSV (Comma-Separated Values) represents data as flat rows and columns — simple, compact, and universally supported by spreadsheet software. JSON represents data as nested key-value structures, better suited for complex, hierarchical data used in modern APIs and applications.' },
+        { heading: 'When to Use CSV', content: 'CSV works best for tabular data destined for spreadsheets — sales records, contact lists, or exported reports that non-technical users need to open in Excel or Google Sheets.' },
+        { heading: 'When to Use JSON', content: 'JSON is the standard for web APIs and configuration files where data has nested relationships — like an order containing multiple line items, each with their own properties. Most modern applications and databases exchange data in JSON format by default.' },
+        { heading: 'Converting Between Formats Safely', content: 'When converting JSON to CSV, deeply nested structures need to be flattened, which can lose some relational context — review the output carefully. When converting CSV to JSON, ensure column headers become clean, consistent key names to avoid issues in downstream code.' },
+      ],
+    },
+  },
 };
 
 export function getToolContent(toolId) {
